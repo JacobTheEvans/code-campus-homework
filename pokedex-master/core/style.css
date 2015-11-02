@@ -1,0 +1,59 @@
+body {
+  background: #FFB600;
+  font-family: 'Arvo', serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.wrapper {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.input-bx {
+  margin-top: 20px;
+}
+
+.btn-custom {
+  background-color: #5239CE;
+  color: white;
+  margin-top: 10px;
+}
+
+.btn-custom:hover {
+  color: #FFFF00;
+}
+
+.pokemon-box {
+  margin-top: 40px;
+}
+
+.name {
+  font-size: 40px;
+  color: white;
+}
+
+.label {
+  font-size: 23px;
+  color: #5239CE;
+}
+
+.txt {
+  font-size: 20px;
+  color: white;
+}
+
+.img-box {
+  margin-top: 20px;
+  text-align: center;
+  background-color: white;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: #5239CE;
+  border-width: 2px;
+  border-radius: 30px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="badgeApp">
+<title>Angular Badge</title>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="core/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="wrapper">
+    <div ng-controller="mainController">
+      <div class="container">
+        <div class="section">
+        <div class="inside-border">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-lg-6">
+                <input ng-change="isFilledOut()" ng-model="formData.firstName" class="form-control form-custom" placeholder="First Name">
+            </div>
+            <div class="col-lg-6">
+              <input ng-change="isFilledOut()" ng-model="formData.lastName" class="form-control form-custom" placeholder="Last Name">
+            </div>
+            <div class="col-lg-6">
+              <input ng-change="isFilledOut()" ng-model="formData.email" class="form-control form-custom" placeholder="Email">
+            </div>
+            <div class="col-lg-6">
+              <input ng-change="isFilledOut()" ng-model="formData.birth" class="form-control form-custom" placeholder="Place of Birth">
+            </div>
+            <div class="col-lg-6">
+              <input ng-change="isFilledOut()" ng-model="formData.phone" class="form-control form-custom" placeholder="Phone Number">
+            </div>
+            <div class="col-lg-6">
+              <input ng-change="isFilledOut()" ng-model="formData.food" class="form-control form-custom" placeholder="Favorite Food">
+            </div>
+            <div class="col-lg-12">
+              <textarea ng-change="isFilledOut()" ng-model="formData.about" class="form-control" rows="5" placeholder="Tell us about yourself"></textarea>
+              <button ng-disabled="!valid" ng-click="submitData()" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      <div ng-repeat="badge in badges">
+        <div class="container">
+          <div class="section">
+            <div ng-style="{backgroundColor: badge.backColor}" class="jumbotron jumbo-custom"><h4>Badge</h2></div>
+            <div class="inside-border">
+            <div class="row">
+              <div class="col-lg-6">
+                <p>Name: {{badge.name}}</p>
+              </div>
+              <div class="col-lg-6">
+                <p>Number:{{badge.number}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <p>Place of Birth: {{badge.birth}}</p>
+              </div>
+              <div class="col-lg-6">
+                <p>Favorite Food: {{badge.food}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <p>Email: {{badge.email}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <h3>About</h3>
+                <p>{{badge.about}}</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="core/app.js"></script>
+</body>
+</html>

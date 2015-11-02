@@ -1,0 +1,41 @@
+.wrapper {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.info-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 50px !important;
+}
+
+.color-red {
+  color: #c9302c;
+}
+
+.color-blue {
+  color: #337ab7;
+}
+
+.btn-custom {
+  padding: 15px;
+  font-size: 15px;
+}
+
+.result {
+  margin-top: 150px;
+}
+
+.alert {
+  font-size: 35px;
+}
+
+.vs {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    margin-top: 40px;
+  }
+}

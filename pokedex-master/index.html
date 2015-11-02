@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="core/style.css">
+</head>
+<body ng-app="infoApp">
+  <div ng-controller="mainController" class="wrapper">
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3">
+        <img src="core/logo.gif">
+      </div>
+    </div>
+    <div class="container input-bx">
+      <div class="row">
+        <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
+          <input ng-model="id" class="form-control" placeholder="ID Number">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
+          <a ng-click="updatePokemon()" class="btn form-control btn-custom">Get Pokemon</a>
+        </div>
+      </div>
+      <div class="row pokemon-box" ng-if="pokemon.name">
+        <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
+          <h4 class="name">{{pokemon.name}}</h4>
+          <h5 class="label">Attack</h5>
+          <p class="txt">{{pokemon.attack}}</p>
+          <h5 class="label">Abilities</h5>
+          <p class="txt">{{pokemon.abilities}}</p>
+          <div class="img-box">
+            <img ng-src="{{pokemon.url}}">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="core/app.js"></script>
+</body>
+</html>

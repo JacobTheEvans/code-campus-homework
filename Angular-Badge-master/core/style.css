@@ -1,0 +1,58 @@
+p {
+  font-size: 17px;
+}
+
+.wrapper {
+  margin-top: 25px;
+}
+
+.section {
+  margin-top: 30px;
+  border-style: solid;
+  border-color: #383838;
+  border-width: 4px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.inside-border {
+  padding: 40px;
+  text-align: left;
+}
+
+.form-custom {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.badge-style {
+  text-align: left;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.jumbo-custom {
+  color: white;
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 5px;
+  border-top-left-radius:26px !important;
+  border-top-right-radius:26px !important;
+}
+
+@media (max-width: 976) {
+  .form-right {
+    margin-left: 0px;
+  }
+
+  .form-left {
+    margin-right: 0px;
+  }
+
+  .form-custom {
+    display: inline;
+    width: 100%;
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cartoons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="core/css/style.css">
+</head>
+<body ng-app="postApp">
+  <nav class="navbar navbar-inverse navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#/"><b>Cartoons!</b></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-right">
+                        <button id="new-btn" onclick="showForm()" class="btn btn-success">Upload Cartoon</button>
+                    </form>
+                </div>
+                <!--/.navbar-collapse -->
+            </div>
+        </nav>
+  <div ng-controller="mainController" class="wrapper">
+    <div id="newPost" class="container">
+      <div class="center input-box">
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <input ng-model="formData.title" placeholder="Title" class="form-control">
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <input ng-model="formData.url" placeholder="URL" class="form-control">
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <input ng-model="formData.desc" placeholder="Description" class="form-control">
+          </div>
+          <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4">
+            <button ng-click="addCartoon()" class="btn btn-primary btn-custom">Submit</button>
+            <button onclick="closeForm()" class="btn btn-warning btn-custom">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div ng-repeat="post in cartoons track by $index">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="post-box">
+              <div ng-style="{backgroundImage: 'url({{post.url}})'}" class="bg-image bg-image-wedding"></div>
+              <h5><b>{{post.title}}</b></h5>
+              <p>{{post.desc}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="core/javascript/app.js"></script>
+  <script src="core/javascript/storeCartoons.js"></script>
+  <script src="core/javascript/animation.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="core/style.css">
+</head>
+<body ng-app="todoApp">
+  <div class="wrapper">
+    <div ng-controller="mainController" class="container">
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <div class="style-wrapper">
+            <h2>Todo List</h2>
+            <form class="form-inline">
+              <input ng-model="newItem" class="form-control">
+              <a href="#" ng-click="addItem()" class="btn btn-primary">Add</a>
+            </form>
+            <ul ng-repeat="item in todoItems track by $index" class="list-unstyled list-custom">
+              <li>
+                <a href="#" ng-click="removeItem($index)"><span class="glyphicon glyphicon-check"><span></a>
+                   {{item}}
+                <hr>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="core/app.js"></script>
+</body>
+</html>

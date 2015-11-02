@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Looper</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <h2 class="logo">Random Images from <a href="http://imgur.com/">Imgur</a></h2>
+  <div id="images">
+  </div>
+  <script>
+  var images = ["http://i.imgur.com/IO6NJMu.jpg","http://i.imgur.com/aiWUtOj.png","http://i.imgur.com/ZCrrX1h.png","http://i.imgur.com/0YJYkBd.jpg","http://i.imgur.com/fkphPSr.png","http://i.imgur.com/NB9RVBG.jpg","http://i.imgur.com/ZO2Vioa.jpg","http://i.imgur.com/9qkn2vv.jpg?1","http://i.imgur.com/HpzitC8.jpg"];
+  for(var i = 0; i < images.length; i++){
+    var oldHTML = document.getElementById("images").innerHTML;
+    var newHTML = oldHTML + '<img src="' + images[i] + '" class="img"><br>';
+    document.getElementById("images").innerHTML = newHTML;
+  }
+  </script>
+</body>
+</html>

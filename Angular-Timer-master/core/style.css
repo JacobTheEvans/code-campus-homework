@@ -1,0 +1,25 @@
+.wrapper {
+  margin-top: 75px;
+}
+
+.center {
+  text-align: center;
+}
+
+.main-box {
+  color: white;
+  background-color: #ff3232;
+  padding: 15px;
+  border-color: black;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.main-txt {
+  font-size: 40px;
+}
+
+.end-txt {
+  font-size: 34px;
+}

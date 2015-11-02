@@ -1,0 +1,48 @@
+body {
+  color: white;
+}
+
+/*Section ID CSS*/
+
+#sec-1 {
+  width: 300px;
+}
+
+#sec-2 {
+  width: 350px;
+}
+
+#sec-3 {
+  width: 400px;
+}
+
+/*Section Class*/
+
+.section {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-radius: 5%;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*Color classes*/
+
+.color-blue {
+  background-color: #00e5e5;
+}
+
+.color-orange {
+  background-color: #ffae19;
+}
+
+.color-purple {
+  background-color: #663096;
+}

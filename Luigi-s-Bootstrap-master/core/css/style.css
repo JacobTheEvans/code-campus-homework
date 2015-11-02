@@ -1,0 +1,59 @@
+@font-face {
+    font-family: SuperMario;
+    src: url(../fonts/SuperMario256.ttf);
+}
+
+html {
+   position: relative;
+   min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 90px;
+}
+
+.logo {
+  padding-top: 10px;
+  font-size: 65px;
+  font-family: SuperMario;
+}
+
+.logo-image {
+  padding-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.desc {
+  font-size: 30px;
+}
+
+.gold-section {
+  height: 100px;
+  width: 100%;
+  background-color: #ffda09;
+}
+
+.red-section {
+  height: 500px;
+  width: 100%;
+  background-color: #eb1f22;
+}
+
+.color-red-font {
+  color: #eb1f22;
+}
+
+.footer-image {
+  width: 90px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}

@@ -1,0 +1,35 @@
+.wrapper {
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.logo {
+  font-size: 35px;
+}
+
+.section {
+  font-size: 25px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-bar {
+  margin-top: 40px;
+}
+
+.btn {
+  padding: 10px;
+  color: #33CCFF;
+  text-decoration: none;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #33CCFF;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #33CCFF;
+}

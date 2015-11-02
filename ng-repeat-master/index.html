@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="appMain">
+<head>
+  <title>Ng-Repeat</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="core/style.css">
+</head>
+<body ng-controller="mainController">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3">
+        <h2 class="center">Players Killed</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div ng-repeat="kill in kills">
+        <div class="col-lg-4">
+          <div class="section" ng-style="{backgroundColor: kill.color}">
+            <h3>Name: {{kill.name}}</h3>
+            <h3>Rank: {{kill.rank}}</h3>
+            <h3>Clans:<span ng-repeat="clan in kill.clans">
+              {{clan}}
+            </span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="core/player.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="core/app.js"></script>
+</body>
+</html>

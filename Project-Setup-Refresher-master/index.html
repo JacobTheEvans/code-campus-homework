@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>Angular Template</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+  <style>
+  .wrapper {
+    margin-top: 100px;
+  }
+  .section {
+    margin-top: 30px;
+  }
+  .form-control {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .label-custom {
+    font-size: 14px;
+    padding: 10px;
+    color: white;
+    background-color: #337ab7;
+  }
+  </style>
+  <div class="wrapper">
+    <div class="container section">
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <div ng-controller="addController">
+            <input type="text" placeholder="First Number" ng-model="num1" class="form-control">
+            <input type="text" placeholder="Second Number" ng-model="num2" class="form-control">
+            <label class="form-control label-custom ">Sum: {{sum}}</label>
+            <a class="btn btn-primary" ng-click="sum=add();">Add</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container section">
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <div ng-controller="multiController">
+              <input type="text" placeholder="First Number" ng-model="num1" class="form-control">
+              <input type="text" placeholder="Second Number" ng-model="num2" class="form-control">
+              <label class="form-control label-custom">Total: {{total}}</label>
+              <a class="btn btn-primary" ng-click="total=mutli();">Multiply</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="core/app.js"></script>
+</body>
+</html>

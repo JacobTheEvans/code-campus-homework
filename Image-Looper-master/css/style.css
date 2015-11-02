@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  color: #663096;
+  font-size: 35px;
+}
+
+.img {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,14 @@
+<div ng-repeat="item in items track by $index">
+  <div class="col-lg-12">
+    <h1>{{item.name}}</h1>
+    <h3>${{item.price}}</h3>
+    <img class="img-custom" ng-src="{{item.img}}">
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>Total: ${{getTotal()}}</h2>
+    </div>
+  </div>
+</div>

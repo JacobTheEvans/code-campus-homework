@@ -1,0 +1,74 @@
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.navbar-brand {
+  font-size: 27px;
+  color: #ff3232 !important;
+}
+
+.navbar-brand:hover {
+  color: #ff6666 !important;
+}
+
+.navbar a {
+  font-size: 20px;
+  color: #ff3232 !important;
+}
+
+.navbar a:hover {
+  color: #ff6666 !important;
+}
+
+.btm-text {
+  font-size: 20px;
+  margin-top: 370px;
+  text-align: center;
+  width: 100%;
+  background:rgba(255,0,0,0.5);
+  color: white;
+}
+
+.bg-image {
+  /* image specified in separate class below */
+  height: 240px;
+  width: 100%;
+  margin: 10px;
+  padding: 0px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: black;
+  border-width: 2px;
+}
+
+.bg-image-crop {
+
+  /* lt ie8 */
+  -ms-background-position-x: center;
+  -ms-background-position-y: bottom;
+  background-position: center bottom;
+
+  /* scale bg image proportionately */
+  background-size: cover;
+
+  /* ie8 workaround - http://louisremi.github.io/background-size-polyfill/ */
+  -ms-behavior: url(/backgroundsize.min.htc);
+  /* prevent scaling past src width (or not) */
+  /* max-width: 1200px; */
+}
+
+
+@media only screen and (min-width : 768px) {
+  .bg-image { height: 320px; }
+  .btm-text { margin-top: 290px; }
+}
+
+@media only screen and (min-width : 1200px) {
+  .bg-image { height: 400px; }
+  .btm-text { margin-top: 370px; }
+}
+
+@media only screen and (max-width : 768px) {
+  .bg-image { height: 400px; }
+  .btm-text { margin-top: 370px; }
+}

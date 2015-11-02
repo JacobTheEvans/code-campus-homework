@@ -1,0 +1,129 @@
+.body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+  background-color: #191919 !important;
+}
+
+.wrapper {
+  padding-top: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.input-box {
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+
+.form-control {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.btn-custom {
+  margin-top: 30px;
+  font-size: 17px;
+}
+
+.post-box {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  padding-top: 25px;
+  padding-bottom: 400px;
+  background-color: #191919;
+  border-radius: 5px;
+}
+
+
+.comment-box {
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+  background-color: #191919;
+}
+
+.comment {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comment-txt {
+  font-size: 17px;
+}
+
+.remove-btn {
+  margin-left: -13px;
+  margin-top: -20px;
+  float: left;
+  text-align: left;
+  color: white;
+}
+
+.remove-btn:hover {
+  color: grey;
+}
+
+.btn-comment {
+  margin-top: 5px;
+}
+
+.sep {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 3px;
+  width: 100%;
+  background: #696969;
+}
+
+.btn-remove-comment {
+  margin-top: -5px;
+  float: right;
+}
+
+.bg-image {
+  height: 150px;
+  width: 100%;
+}
+
+.bg-image-wedding {
+  /* lt ie8 */
+  -ms-background-position-x: center;
+  -ms-background-position-y: bottom;
+  background-position: center bottom;
+
+  /* scale bg image proportionately */
+  background-size: cover;
+
+  /* ie8 workaround - http://louisremi.github.io/background-size-polyfill/ */
+  -ms-behavior: url(/backgroundsize.min.htc);
+  /* prevent scaling past src width (or not) */
+  /* max-width: 1200px; */
+}
+
+@media only screen and (min-width : 768px) {
+  .bg-image { height: 300px; }
+  .post-box {height: 320px;}
+}
+
+@media only screen and (min-width : 1200px) {
+  .bg-image { height: 350px; }
+  .post-box {height: 450px;}
+}
+
+@media only screen and (max-width: 764px) {
+  .bg-image { height: 340px; }
+  .post-box {height: 420px; padding-bottom: 420px;}
+}

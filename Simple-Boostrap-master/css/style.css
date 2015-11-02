@@ -1,0 +1,36 @@
+.wrapper {
+  margin-top: 50px;
+}
+
+.section {
+  height: 100px;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.color-pink {
+  background-color: #F5C6D6 !important;
+  width: 100%;
+}
+
+.color-dark-pink {
+  background-color: #EE2E84 !important;
+  width: 100%;
+}
+
+.color-blue {
+  background-color: #85CFD8 !important;
+  width: 100%;
+}
+
+.color-green {
+  background-color: #8DC63F !important;
+  width: 100%;
+}
+
+.color-orange {
+  background-color: #E76E34 !important;
+  width: 100%;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple calculator</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link hreflang=""
+</head>
+<body>
+  <div class="main">
+    <div class="section color-blue">
+      <label>Add</label>
+      <br>
+      <input id="num-1-add">
+      <br>
+      <input id="num-2-add">
+      <br>
+      <button id="add-button">Submit</button>
+    </div>
+
+    <div class="section color-orange">
+      <label>Subtract</label>
+      <br>
+      <input id="num-1-minus">
+      <br>
+      <input id="num-2-minus">
+      <br>
+      <button id="minus-button">Submit</button>
+    </div>
+
+    <div class="section color-purple">
+      <label>Multiple</label>
+      <br>
+      <input id="num-1-multi">
+      <br>
+      <input id="num-2-multi">
+      <br>
+      <button id="multi-button">Submit</button>
+    </div>
+  </div>
+
+  <div id="output" class="color-black">Total: </div>
+
+  <script>
+  var addButton = document.getElementById("add-button");
+  addButton.addEventListener('click', function(){
+    var addNum1 = parseInt(document.getElementById("num-1-add").value);
+    var addNum2 = parseInt(document.getElementById("num-2-add").value);
+    var output = document.getElementById("output");
+    output.innerHTML = ("Total: ") + (addNum1 + addNum2);
+
+    //Refresh
+    document.getElementById("num-1-add").value = "";
+    document.getElementById("num-2-add").value = "";
+  });
+  </script>
+
+  <script>
+  var minusButton = document.getElementById("minus-button");
+  minusButton.addEventListener('click', function(){
+    var minusNum1 = parseInt(document.getElementById("num-1-minus").value);
+    var minusNum2 = parseInt(document.getElementById("num-2-minus").value);
+    var output = document.getElementById("output");
+    output.innerHTML = ("Total: ") + (minusNum1 -  minusNum2);
+
+    //Refresh
+    document.getElementById("num-1-minus").value = "";
+    document.getElementById("num-2-minus").value = "";
+  });
+  </script>
+
+  <script>
+  var multiButton = document.getElementById("multi-button");
+  multiButton.addEventListener('click', function(){
+    var multiNum1 = parseInt(document.getElementById("num-1-multi").value);
+    var multiNum2 = parseInt(document.getElementById("num-2-multi").value);
+    var output = document.getElementById("output");
+    output.innerHTML = ("Total: ") + (multiNum1 *  multiNum2);
+
+    //Refresh
+    document.getElementById("num-1-multi").value = "";
+    document.getElementById("num-2-multi").value = "";
+  });
+  </script>
+
+
+</body>
+</html>

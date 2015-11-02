@@ -1,0 +1,80 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.navbar-default {
+  background-color: #333333;
+  border-color: #323232;
+}
+
+.navbar-default a {
+  color: white !important;
+}
+
+.navbar-default a:hover {
+  color: #cccccc !important;
+}
+
+.state-image {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.logo {
+  text-align: center;
+  font-size: 100px;
+  color: black;
+  text-shadow:0 0 5px blue;
+}
+
+.par-head {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  text-shadow:0 0 5px grey;
+}
+
+.par-txt {
+  font-size: 17px;
+}
+
+.pop-info {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.why-logo {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  text-shadow:0 0 5px yellow;
+  margin-bottom: 20px;
+}
+
+.why-box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.why-image {
+  height: 400px;
+  padding: 5px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.why-cap {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .why-image {
+    width: 100%;
+  }
+}
